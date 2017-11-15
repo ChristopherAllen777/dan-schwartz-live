@@ -1,0 +1,100 @@
+body.page-template-page-volunteer{
+	@media only screen and (min-width: 1500px){
+		background-size:contain !important;
+	}
+	section{
+		&.bottom-volunteer-form{
+			background-color:$main-blue;
+			color:#fff;
+			padding:6em 0 5em 0;
+			position:relative;
+			.container{
+				&:before{
+				    border: solid transparent;
+				    border-color: transparent;
+				    content: "";
+				    height: 0;
+				    pointer-events: none;
+				    position: absolute;
+				    width: 0;
+				    z-index: 1;
+				    border-top-color: $body-background;
+				    border-width: 50px 80px;
+				    bottom: 100%;
+				    left: 50%;
+				    transform: translateX(-50%);
+				    top: 0;
+				}
+				#volunteer_form{
+					input,button{
+						width:100%;
+						margin-bottom:2em;
+						height:45px;
+						color:$text-color;
+					}
+					button{
+						max-width: none;
+	    				border-radius: 2em;
+	    				color:$body-background;
+					}
+					.col-sm-6{
+						&.col-md-4{
+							&:before{
+								content:"The filed is required";
+								display:none;
+							}
+						}
+					}
+
+
+				}
+
+
+			}
+			.btn{
+				margin:0;
+			}
+			}
+	}
+	.row{
+		margin-top:0;
+		&.select_volunteer{
+			margin-left:0;
+			margin-right:0;
+			.col-md-6{
+				.row{
+					margin-top:0;
+					.col-xs-2{
+						display:inline-flex;
+						label{
+							@include vertical-align();
+							input[type="checkbox"]{
+							    padding: 10px;
+							    transform:scale(2);
+							    zoom:1.3;
+							}
+						}
+					    
+					}
+					.col-xs-4{
+						display:inline-flex;
+						embed{
+							@include vertical-align();
+						}
+					}
+					.col-xs-8{
+						h2{
+							margin-top:0;
+							color:$main-blue;
+							font-size:20px;
+						}				
+					}
+				}
+
+
+			}
+		}
+	}
+
+
+}

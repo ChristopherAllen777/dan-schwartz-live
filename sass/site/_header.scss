@@ -1,0 +1,298 @@
+
+header#masthead{
+
+    padding: .5em 0;
+    position: absolute;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    z-index:11;//greater than the body container
+
+
+
+	//fixed header
+	&.fixedHeader{
+		background-color: #f8f8f8;
+    	border-color: #f8f8f8;
+		position:fixed;
+		a{
+			color:$text-color;
+		}
+
+	}
+	//menu frame
+	nav.navbar{
+
+		//mobile width
+		width:90%;
+		background: none;
+    	border: 0;
+		margin-left:auto;
+		margin-right:auto;
+		display: block;
+		text-transform: uppercase;
+
+		//mobile collaps menu
+		.navbar-collapse{
+			border-top:0px;
+		}
+
+		//left logo
+		a.navbar-brand{
+			background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/logo.png);
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		    width:250px;
+		}
+
+		//right top menu
+		.navbar-nav {
+			float: right;
+			margin: 0;
+			text-align:center;
+			width:100%;
+			a:hover{
+				color:$main-red !important;
+			}
+		}
+		//nav bar mobile
+		.navbar-toggle{
+			display:none;
+		}
+
+		@media (min-width: $mobile_min){
+			width: 750px;
+			.navbar-nav{
+				width:auto;
+				position:absolute;
+				right:0;
+			}
+		}
+
+		@media (min-width: $tablet_min){
+			width:970px;
+		//nav bar mobile
+			.navbar-toggle{
+				display:inline-block;
+			}
+
+		}
+		@media (min-width: $desktop_min){
+			width: 1170px;
+
+		}
+
+	}
+
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+		
+		background:none;
+		color:$main-red;
+	}
+}
+
+
+
+//top menu full screen
+body {
+ 
+  &.menu-active {
+  #menu-btn {
+    span {
+          background-color: transparent;
+      
+      &:before {
+    -webkit-transform: translateY(0) rotate(45deg) translateZ(0);
+    -moz-transform: translateY(0) rotate(45deg) translateZ(0);
+    -ms-transform: translateY(0) rotate(45deg) translateZ(0);
+    -o-transform: translateY(0) rotate(45deg) translateZ(0);
+    transform: translateY(0) rotate(45deg) translateZ(0);
+      }
+      
+      &:after {
+    -webkit-transform: translateY(0) rotate(-45deg) translateZ(0);
+    -moz-transform: translateY(0) rotate(-45deg) translateZ(0);
+    -ms-transform: translateY(0) rotate(-45deg) translateZ(0);
+    -o-transform: translateY(0) rotate(-45deg) translateZ(0);
+    transform: translateY(0) rotate(-45deg) translateZ(0);
+      }
+    }
+  }
+    
+    #menu-wrapper {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+    }
+    
+}
+  
+}
+
+#menu-btn {
+    right: 0;
+    width: 60px;
+    height: 47px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index: 100;
+    @media (min-width: $mobile_min){
+    	display:none;
+    }
+  
+  span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 23px;
+    height: 3px;
+    background: $text-color;
+    font-size: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    left: 50%;
+    margin-left: -12px;
+    
+    &:after, &:before {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $text-color;
+    content: '';
+    }
+    
+    &:before {
+    -webkit-transform: translateY(-298%) translateZ(0);
+    -moz-transform: translateY(-298%) translateZ(0);
+    -ms-transform: translateY(-298%) translateZ(0);
+    -o-transform: translateY(-298%) translateZ(0);
+    transform: translateY(-298%) translateZ(0);
+    }
+    
+    &:after {
+     -webkit-transform: translateY(298%) translateZ(0);
+    -moz-transform: translateY(298%) translateZ(0);
+    -ms-transform: translateY(298%) translateZ(0);
+    -o-transform: translateY(298%) translateZ(0);
+    transform: translateY(298%) translateZ(0);
+    }
+    
+  }
+  
+}
+
+  
+#menu-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $body-background;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+    transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Schwartz_homepage_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    
+    nav {
+	    text-align: center;
+	    position: relative;
+	    height: 100%;
+	    display: table;
+	    width: 100%;
+	    transform:translateY(20%);
+
+	    #title{
+		    font-size: 32px;
+		    color: #95989a;
+		    font-weight: bold;
+		    padding-bottom: .3em;
+		    border-bottom: 2px #C11C1A solid;
+	    }
+	    .top_menu_social{
+	    	.fa{
+		    	font-size:32px; 
+		    	padding:1em;
+		    	&.fa-facebook{
+		    		color:$main-blue;
+		    	}
+		    	&.fa-twitter{
+		    		color:$twitter-blue;
+		    	}
+		    }
+
+	    }
+
+ 		.menu-top-menu-container{
+			ul {
+
+ 				margin-top:4em !important;
+				padding: 0;
+				margin: 0 auto;
+				display: inline-block;
+				position: relative;
+				display: table-cell;
+				vertical-align: middle;
+
+				li {
+				    list-style: none;
+				    display: block;
+				    -webkit-backface-visibility: hidden;
+				    backface-visibility: hidden;
+				    margin: 0px;
+				    letter-spacing: 5px;
+				    padding:0;
+					padding-bottom: 2em;
+				  
+				  a {
+				    font-size: 23px;
+				    font-weight: 400;
+				    display: block;
+				    color: $main-blue;
+				    -webkit-transition: color 0.2s;
+				    transition: color 0.2s;
+				    outline: none;
+				    text-decoration: none;
+				    background: transparent;
+				    padding: 15px;
+				    
+				    &:hover {
+				      color: rgb(0, 255, 255);
+				    }
+				  }
+				}
+			}
+
+ 		}    
+
+    }
+  }
+  
+
+
+

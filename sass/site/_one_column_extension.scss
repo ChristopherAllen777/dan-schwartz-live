@@ -1,0 +1,44 @@
+/////////Follow Dan////////////////////////
+.follow_dan_container{
+	.row
+		.col-md-4{
+			height:width;
+			.inner-container{
+				background-image:url("/wp-content/themes/hm-wordpress-base-theme/img/follow_photo_background.jpg");
+				background-size:cover;
+				width:95%;
+				max-width:350px;
+				&:before{
+					content: "";
+					display: block;
+					padding-top: 95%; 	/* ratio of 1:1*/
+
+				}
+			}
+
+
+		}
+}
+
+////////Issues///////////////////////////////
+body.page-template-page-issues{
+	.row{
+		@media only screen and (min-width: $mobile_min) {
+		    		display:flex;
+		}
+		.col-sm-6{
+			padding:1em;
+			.col-sm-6-container{
+				padding:1em;
+				background-color:$main-blue;
+				color:white;
+				height:100%;
+				h2,p{
+					color:white;
+				}
+
+			}
+		}
+	}
+
+}

@@ -1,0 +1,328 @@
+﻿
+/*///// 1 column template page ///////////////*/
+/*=============================================*/
+body.page-template.page-template-page-one-column .container.posts.custom {
+    margin-bottom: 50px;
+}
+body.page-template.page-template-page-one-column .row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
+body.page-template.page-template-page-one-column {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Schwartz_homepage_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+}
+body.page-template.page-template-page-one-column .container.posts.custom {
+	background: transparent;
+}
+body.page-template.page-template-page-one-column .container.posts.custom span {
+  font-size: 50px;
+  /*  shadows render better in certain browsers than text, first rule is for older browser support  */
+  color: #898d8f;
+  /*color: transparent;*/
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 #333, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
+  /*  gradient background allows us to use css only & re-position it  */
+  background: -webkit-linear-gradient(#999, #999) center 1.09em no-repeat;
+  background: linear-gradient(#9e0a0a, #de2121) center 1.32em no-repeat;
+  /*  can precisely control size in relation to the text  */
+  background-size: 25% 5px;
+  /*  now the under6ine supports transitions  */
+  -webkit-transition: .5s ease;
+  transition: 1.0s ease;
+  display: block;
+  margin-top: 115px;
+  font-weight: bolder;
+}
+
+body.page-template.page-template-page-one-column .container.posts.custom span:hover {
+  /*  backgrounds won't size larger than 100%  */
+  background-size: 40% 3.25px;
+}
+
+
+/*/////Meet Dan////////////*/
+/*=============================================*/
+
+body.page-template.page-template-page-one-column .container.posts.custom h2#issue-header{
+	color: #bc2223;
+	font-weight: bold;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .row.issues {
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	min-height: 400px;
+}
+img#issue-pic {
+    display: block;
+    margin: auto;
+    width: 382px;
+    float: right!important;
+}
+/*Media Queries*/
+@media (max-width: 991px){
+	img#issue-pic {
+    width: 100%;
+    float: none!important;
+}
+	body.page-template.page-template-page-one-column .container.posts.custom h2#issue-header{
+	text-align: center;
+	}
+}
+@media (min-width: 991px){
+	div#intro-row {
+    min-height: 386px;
+}
+	img#issue-pic.intro-pic {
+	width: 100%;
+}
+	body.page-template.page-template-page-one-column .container.posts.custom h2.issue-header {
+    color: #ffffff!important;
+    font-weight: normal;
+    background: #08123e;
+    margin-left: -141px;
+    margin-right: 141px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 36px;
+	}
+}
+
+/*///// Issues Page ////////////*/
+/*=============================================*/
+
+body.page-template.page-template-page-one-column .container.posts.custom #issues-row {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+	height: auto;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #issues-text {
+	line-height: 1.7;
+	text-align: center;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row {
+    padding: 20px;
+    height: auto;
+    clear: both;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row h3{
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row a {
+	font-style: italic;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row a:hover {
+	color: red;
+	text-decoration: none;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/IssueBlock.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+	background-position-y: top;
+    text-align: center;
+	height: 247px;
+    padding: 15px;
+    padding-top: 76px;
+    margin: 15px;
+    width: 247px;
+    border-radius: 12px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue:hover {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/IssueCircle.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+	cursor: pointer;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1199px){
+	body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/IssueBlock.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    text-align: center;
+    height: 200px;
+    padding: 15px;
+    padding-top: 57px;
+    margin: 15px;
+    width: 200px;
+    border-radius: 12px;
+}
+	body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row h3{
+	font-size: 21px;
+}
+}
+@media (max-width: 991px){
+	body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/IssueBlock.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    text-align: center;
+    height: 320px;
+    padding: 15px;
+    padding-top: 98px;
+    margin: 15px;
+    width: 320px;
+    border-radius: 12px;
+}
+}
+@media (max-width: 767px){
+	body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/IssueBlock.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    text-align: center;
+    height: 320px;
+    padding: 15px;
+    padding-top: 98px;
+    margin: 15px;
+    width: 320px;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+	body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row h3{
+	font-size: 35px;
+}
+}
+/*///// Donate Page ////////////*/
+/*=============================================*/
+body.page-template .page-template-page-donate {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Schwartz_mockup_donate_Background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+}
+body.page-template.page-template-page-donate .container.posts.custom {
+	background: transparent;
+}
+/*///// Follow Dan Page ////////////*/
+/*=============================================*/
+
+body.page-template.page-template-page-one-column .container.posts.custom #follow-dan-row{
+    padding: 20px;
+    height: auto;
+    clear: both;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #follow-dan-row h3{
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #follow-dan-row a {
+	font-style: italic;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #follow-dan-row a:hover {
+	color: red;
+	text-decoration: none;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .event {
+    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/follow_block.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    text-align: center;
+    height: 346px;
+    padding: 15px;
+    padding-top: 76px;
+    margin: 15px;
+    width: 346px;
+    border-radius: 12px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .col-sm4.event:hover {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/follow_Hoverblock2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+	cursor: pointer;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1199px){
+	body.page-template.page-template-page-one-column .container.posts.custom .event {
+        background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/follow_block.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: top;
+        text-align: center;
+        height: 280px;
+        padding: 15px;
+        padding-top: 57px;
+        margin: 15px;
+        width: 280px;
+        border-radius: 12px;
+}
+	body.page-template.page-template-page-one-column .container.posts.custom #follow-dan-row h3{
+	font-size: 21px;
+}
+}
+@media (max-width: 991px){
+	body.page-template.page-template-page-one-column .container.posts.custom .event {
+    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/follow_block.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    text-align: center;
+    height: 320px;
+    padding: 15px;
+    padding-top: 98px;
+    margin: 15px;
+    width: 320px;
+    border-radius: 12px;
+}
+}
+@media (max-width: 767px){
+	body.page-template.page-template-page-one-column .container.posts.custom .event {
+    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/follow_block.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    text-align: center;
+    height: 320px;
+    padding: 15px;
+    padding-top: 98px;
+    margin: 15px;
+    width: 320px;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+	body.page-template.page-template-page-one-column .container.posts.custom #follow-dan-row h3{
+	font-size: 35px;
+}
+}

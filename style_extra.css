@@ -1,0 +1,620 @@
+﻿/*=============================================*/
+/*///// 1 column template page ///////////////*/
+/*=============================================*/
+body.page-template.page-template-page-one-column .container.posts.custom {
+    margin-bottom: 50px;
+    min-height:824px;
+}
+body.page-template.page-template-page-one-column .row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
+body.page-template.page-template-page-one-column {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Schwartz_homepage_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+}
+body.page-template.page-template-page-one-column .container.posts.custom {
+    background: transparent;
+}
+body.page-template.page-template-page-one-column .container.posts.custom span#title{
+  font-size: 50px;
+  /*  shadows render better in certain browsers than text, first rule is for older browser support  */
+  color: #898d8f;
+  /*color: transparent;*/
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 #333, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
+  /*  gradient background allows us to use css only & re-position it  */
+  background: -webkit-linear-gradient(#999, #999) center 1.09em no-repeat;
+  background: linear-gradient(#9e0a0a, #de2121) center 1.32em no-repeat;
+  /*  can precisely control size in relation to the text  */
+  background-size: 25% 5px;
+  /*  now the under6ine supports transitions  */
+  -webkit-transition: .5s ease;
+  transition: 1.0s ease;
+  display: block;
+  margin-top: 115px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom button {
+    color: #5f5e5e;
+    background: none;
+    border: none;
+}
+body.page-template.page-template-page-one-column .container.posts.custom button:hover {
+    color: #9e0a0a;
+    background: none;
+    border: none;
+}
+body.page-template.page-template-page-one-column .container.posts.custom button:focus {
+    outline: none;
+}
+body.page-template.page-template-page-one-column .container.posts.custom span#title:hover {
+  /*  backgrounds won't size larger than 100%  */
+  background-size: 40% 3.25px;
+}
+/* Media Queries */
+@media (max-width: 767px){
+body.page-template.page-template-page-one-column .container.posts.custom span#title {
+    font-size: 32px;
+    background-size: 40% 5px;
+    -webkit-transition: .5s ease;
+    transition: 1.0s ease;
+    display: block;
+    margin-top: 115px;
+    font-weight: bolder;
+}
+}
+/*=============================================*/
+/*///// Event Template ///////////////*/
+/*=============================================*/
+body.page-template.page-template-page-event .container.posts.custom  {
+    margin-bottom: 100px;
+    min-height:800px;
+}
+body.page-template.page-template-page-event .row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
+body.page-template.page-template-page-event {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Schwartz_homepage_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+}
+body.page-template.page-template-page-event .container.posts.custom {
+    background: transparent;
+}
+body.page-template.page-template-page-event .container.posts.custom span#title{
+  font-size: 50px;
+  /*  shadows render better in certain browsers than text, first rule is for older browser support  */
+  color: #898d8f;
+  /*color: transparent;*/
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 0 0 #333, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
+  /*  gradient background allows us to use css only & re-position it  */
+  background: -webkit-linear-gradient(#999, #999) left 1.09em no-repeat;
+  background: linear-gradient(#9e0a0a, #de2121) left 1.32em no-repeat;
+  /*  can precisely control size in relation to the text  */
+  background-size: 25% 5px;
+  /*  now the under6ine supports transitions  */
+  -webkit-transition: .5s ease;
+  transition: 1.0s ease;
+  display: block;
+  margin-top: 115px;
+  font-weight: bolder;
+}
+body.page-template.page-template-page-event .container.posts.custom span#title:hover {
+  /*  backgrounds won't size larger than 100%  */
+  background-size: 40% 3.25px;
+}
+/* Media Queries */
+@media (max-width: 767px){
+    body.page-template.page-template-page-event .container.posts.custom span#title {
+    font-size: 32px;
+    background-size: 40% 5px;
+    -webkit-transition: .5s ease;
+    transition: 1.0s ease;
+    display: block;
+    margin-top: 115px;
+    font-weight: bolder;
+}
+}
+/*=============================================*/
+/*///// Donate Page Template ///////////////*/
+/*=============================================*/
+body.page-template.page-template-page-donate div#content {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Schwartz_mockup_donate_Background.jpg)!important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+}
+body.page-template.page-template-page-donate .container.posts.custom  {
+    background: transparent;
+}
+body.page-template.page-template-page-donate .container.posts.custom .donate {
+    margin-top: 40px;
+}
+body.page-template.page-template-page-donate .container.posts.custom  span#title{
+    font-size: 50px;
+    /*  shadows render better in certain browsers than text, first rule is for older browser support  */
+    color: #ffffff;
+    /*color: transparent;*/
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: none;
+    /*  gradient background allows us to use css only & re-position it  */
+    background: -webkit-linear-gradient(#999, #999) left 1.09em no-repeat;
+    background: linear-gradient(#9e0a0a, #de2121) left 1.32em no-repeat;
+    /*  can precisely control size in relation to the text  */
+    background-size: 25% 5px;
+    /*  now the under6ine supports transitions  */
+    -webkit-transition: .5s ease;
+    transition: 1.0s ease;
+    display: block;
+    margin-top: 115px;
+    font-weight: bolder;
+  }
+  body.page-template.page-template-page-donate .container.posts.custom .wordpress-donate {
+    margin-bottom: 20px;
+  }
+  body.page-template.page-template-page-donate .container.posts.custom p {
+    color: #fff;
+  }
+  body.page-template.page-template-page-donate .container.posts.custom  span#title:hover {
+    /*  backgrounds won't size larger than 100%  */
+    background-size: 40% 3.25px;
+  }
+  body.page-template.page-template-page-donate .container.posts.custom .site-footer {
+    background-color: #b9191a!important;
+}
+  /* Media Queries */
+  @media (max-width: 767px){
+    body.page-template.page-template-page-donate .container.posts.custom  span#title {
+      font-size: 32px;
+      background-size: 40% 5px;
+      -webkit-transition: .5s ease;
+      transition: 1.0s ease;
+      display: block;
+      margin-top: 115px;
+      font-weight: bolder;
+  }
+  }
+/* ************************************************************************************************************************************************** */
+/* Below is the CSS for all the sub-pages using these 
+Templates. If you have any questions about this 
+just let me know. - Chris */
+
+/*=============================================*/
+/*///// Meet Dan Page ////////////*/
+/*=============================================*/
+body.page-template.page-template-page-one-column .container.posts.custom h2#issue-header{
+	color: #bc2223;
+	font-weight: bold;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .row.issues {
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	min-height: 400px;
+}
+img#issue-pic {
+    display: block;
+    margin: auto;
+    width: 382px;
+    float: right!important;
+}
+/* Media Queries - Meet Dan Page */
+        @media (max-width: 991px){
+            img#issue-pic {
+            width: 100%;
+            float: none!important;
+        }
+            body.page-template.page-template-page-one-column .container.posts.custom h2#issue-header{
+            text-align: center;
+            }
+        }
+        @media (min-width: 991px){
+            div#intro-row {
+            min-height: 386px;
+        }
+            img#issue-pic.intro-pic {
+            width: 100%;
+        }
+            body.page-template.page-template-page-one-column .container.posts.custom h2.issue-header {
+            color: #ffffff!important;
+            font-weight: normal;
+            background: #08123e;
+            margin-left: -141px;
+            margin-right: 141px;
+            padding: 15px;
+            text-align: center;
+            margin-top: 36px;
+            }
+        }
+/*=============================================*/
+/*///// Issues Page ////////////*/
+/*=============================================*/
+body.page-template.page-template-page-one-column .container.posts.custom #issues-row {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+	height: auto;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #issues-text {
+	line-height: 1.7;
+	text-align: center;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row {
+    padding: 20px;
+    height: auto;
+    clear: both;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row h3{
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row a {
+	font-style: italic;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row p {
+	color: white;
+}
+body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row p:hover {
+	color: red;
+	text-decoration: none;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/IssueBlock.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+	background-position-y: top;
+    text-align: center;
+	height: 247px;
+    padding: 15px;
+    padding-top: 76px;
+    margin: 15px;
+    width: 247px;
+    border-radius: 12px;
+}
+body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue:hover {
+	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/IssueCircle.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: top;
+	cursor: pointer;
+}
+/* Media Queries - Issues Page */
+        @media (max-width: 1199px){
+            body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+            height: 200px;
+            padding: 15px;
+            padding-top: 57px;
+            margin: 15px;
+            width: 200px;
+            border-radius: 12px;
+        }
+            body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row h3{
+            font-size: 21px;
+        }
+        }
+        @media (max-width: 991px){
+            body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+            height: 320px;
+            padding: 15px;
+            padding-top: 98px;
+            margin: 15px;
+            width: 320px;
+            border-radius: 12px;
+        }
+        }
+        @media (max-width: 767px){
+            body.page-template.page-template-page-one-column .container.posts.custom .col-sm-3.issue {
+            height: 320px;
+            padding: 15px;
+            padding-top: 98px;
+            margin: 15px;
+            width: 320px;
+            border-radius: 12px;
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+            body.page-template.page-template-page-one-column .container.posts.custom #dans-issues-row h3{
+            font-size: 35px;
+        }
+        }
+/*=============================================*/
+/*///// Follow Dan Page ////////////*/
+/*=============================================*/
+
+/* Flex Box Chris Allen */
+body.page-template.page-template-page-one-column .container.posts.custom .col-sm-4.col-xs-12 {
+    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/follow_photo_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    cursor: pointer;
+}
+
+@media (min-width: 991px) {
+    body.page-template.page-template-page-one-column .container.posts.custom .col-sm-4.col-xs-12 {
+        margin: 11px;
+        width: 31%;
+        min-height: 484px;
+    }
+}
+@media screen and (max-width: 991px) and (min-width: 767px){
+    body.page-template.page-template-page-one-column .container.posts.custom .col-sm-4.col-xs-12 {
+        margin: 10px;
+        width: 30%;
+    }
+}
+@media (max-width: 767px) {
+    body.page-template.page-template-page-one-column .container.posts.custom .col-sm-4.col-xs-12 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12 h3 {
+    color: #fff;
+}
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12 h4 {
+    color: #1A6ADC;
+}
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover h4 {
+    color: #001141;
+}
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12 #bullets {
+    color: #fff;
+}
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12 p {
+    color: #fff;
+}
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12 .btn-primary {
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+}
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12 .btn-primary:hover {
+    color: #fff;
+    background: #001141;
+    border-color: #001141;
+}
+body.page-template.page-template-page-one-column .row.is-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body.page-template.page-template-page-one-column .row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body.page-template.page-template-page-one-column .is-flex .box {
+    background: none;
+    position: static;
+    height: 100%;
+    background: #051954;
+    margin-top: 18px;
+    padding-bottom: 20px;
+  }
+  body.page-template.page-template-page-one-column .is-flex [class*="col-"] {
+    background: #fff;
+  }
+  body.page-template.page-template-page-one-column .box {
+    padding: 25px 7% 0;
+    text-align: center;
+    position: relative;
+    background: #051954;
+    margin-bottom: 18px;
+}
+
+/* Hover Actions CSS */
+body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover div.box {
+    /* background: none; */
+    position: static;
+    height: 100%;
+    background: #1A6ADC;
+    margin-top: 18px;
+    padding-bottom: 20px;
+  }
+  @media screen and (max-width: 1200px) and (min-width: 991px){
+    body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover a.btn.btn-primary {
+        position: absolute;
+        top: 41%;
+        left: 17%;
+    }
+  }
+  @media screen and (max-width: 4000000px) and (min-width: 1200px){
+    body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover a.btn.btn-primary {
+        position: absolute;
+        top: 41%;
+        left: 22%;
+    }
+  }
+  @media screen and (max-width: 40000px) and (min-width: 991px) {
+        body.page-template.page-template-page-one-column .col-sm-4.col-xs-12 a.btn.btn-primary {
+            visibility: hidden;
+        }
+        body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover h3 {
+            visibility: hidden;
+        }
+        body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover h4 {
+            visibility: hidden;
+        }
+        body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover #bullets {
+            visibility: hidden;
+        }
+        body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover p {
+            visibility: hidden;
+        }
+        body.page-template.page-template-page-one-column .col-sm-4.col-xs-12:hover a.btn.btn-primary {
+            visibility: visible;
+        }
+}
+
+
+
+
+
+
+/*=============================================*/
+/*///// Event Page ////////////*/
+/*=============================================*/
+body.page-template.page-template-page-event .container.posts.custom form#gform_2 {
+    text-align: center;
+  }
+body.page-template.page-template-page-event .container.posts.custom h1 {
+    text-align: center;
+    text-align: center;
+    margin-bottom: -18px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 100;
+  }
+body.page-template.page-template-page-event .container.posts.custom #rsvp-form  {
+    text-align: center;
+    background: #08123d;
+    border-radius: 15px;
+    margin-top: 19px;
+  }
+body.page-template.page-template-page-event .container.posts.custom input#gform_submit_button_2 {
+    background: #b9191a;
+    color: white;
+    padding: 29px;
+    border-radius: 38px;
+    border: none;
+    width: 94%!important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+body.page-template.page-template-page-event .container.posts.custom .btn {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+body.page-template.page-template-page-event div#events-row{
+    margin-top: 129px!important;
+}
+
+
+
+/* Gravity Form #2- CSS */
+body.page-template.page-template-page-event .container.posts.custom .gform_wrapper .top_label input.medium {
+    width: 90.5%;
+    height: 57px;
+}
+body.page-template.page-template-page-event .container.posts.custom .gform_wrapper label.gfield_label+div.ginput_container {
+    margin-top: -9px;
+}
+body.page-template.page-template-page-event .container.posts.custom .gform_wrapper label.gfield_label+div.ginput_container {
+    margin-top: -2px;
+}
+body.page-template.page-template-page-event .container.posts.custom input#input_2_1::-webkit-input-placeholder {
+    color:#898d8f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+body.page-template.page-template-page-event .container.posts.custom input#input_2_2::-webkit-input-placeholder {
+    color:#898d8f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+body.page-template.page-template-page-event .container.posts.custom input#input_2_3::-webkit-input-placeholder {
+    color:#898d8f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+body.page-template.page-template-page-event .container.posts.custom input#input_2_4::-webkit-input-placeholder {
+    color:#898d8f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+body.page-template.page-template-page-event .container.posts.custom input#input_2_5::-webkit-input-placeholder {
+    color:#898d8f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+body.page-template.page-template-page-event .container.posts.custom div#gform_confirmation_message_2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* Media Queries - Follow Dan Page */
+        @media (max-width: 767px){
+            body.page-template.page-template-page-event div#rsvp-form {
+                padding-top: 8px;
+                margin-top: 30px;
+        }
+            body.page-template.page-template-page-event .container.posts.custom #rsvp-form  {
+                border-radius: 0px;
+          }
+          body.page-template.page-template-page-event .container.posts.custom span#title {
+            text-align: center;
+            background: -webkit-linear-gradient(#999, #999) center 1.09em no-repeat;
+            background: linear-gradient(#9e0a0a, #de2121) center 1.32em no-repeat;
+        }
+        body.page-template.page-template-page-event .container.posts.custom input#gform_submit_button_2 {
+            background: #b9191a;
+            color: white;
+            padding: 20px;
+            border-radius: 38px;
+            border: none;
+            width: 94%!important;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: auto;
+        }
+    }
+    body.page-template.page-template-page-event .container.posts.custom form .gform_body {
+        text-align: center;
+        }
+        body.page-template.page-template-page-event .container.posts.custom form input.gform_button {
+        background: #b9191a;
+        color: white;
+        padding: 29px;
+        border-radius: 38px;
+        border: none;
+        width: 94%!important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        }
+        body.page-template.page-template-page-event .container.posts.custom .gform_confirmation_message{
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }

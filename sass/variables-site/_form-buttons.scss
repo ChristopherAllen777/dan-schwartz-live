@@ -1,0 +1,47 @@
+.row:before, .row:after {
+    content: "";
+    display: none;
+}
+
+.btn{
+	width:90%;
+	max-width:200px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	cursor:pointer;
+	margin-top:1em;
+	margin-bottom:1em;
+	
+}
+.btn-blue{
+		background-color:$main-blue;
+		border-color:$main-blue;
+		color: #fff;
+		&:hover{
+			background-color:$highlight-blue;
+			border-color:$highlight-blue;
+			color:#fff;
+		}
+}
+.btn-red{
+		background-color:$main-red;
+		border-color:$main-red;
+		color:#fff;
+		&:hover{
+			background-color:$highlight-red;
+			border-color:$highlight-red;
+			color:#fff;
+		}
+}
+.btn-white-share{
+	color:#fff;
+	border:1px #fff solid;
+	border-radius:2em;
+	font-size:16px;
+	padding:.5em 2em;
+	&:hover{
+		transform:scale(1.1);
+		color:#fff;
+	}
+}

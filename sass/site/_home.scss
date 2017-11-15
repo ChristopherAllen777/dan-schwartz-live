@@ -1,0 +1,515 @@
+body.home{
+	header#masthead{
+		position:relative;
+				//fixed header
+		&.fixedHeader{
+			background-color: #f8f8f8;
+	    	border-color: #f8f8f8;
+			position:fixed;
+			a{
+				color:$text-color;
+			}
+			//left logo
+			a.navbar-brand{
+				background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/logo.png) !important;
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    width:250px;
+			}
+
+		}
+	}
+
+	@media only screen and (min-width: $mobile_min) {
+		//header
+		header#masthead{
+	    padding: .5em 0;
+	    position: absolute;
+	    width: 100%;
+	    background: none;
+	    border:0;
+	    z-index:11;//greater than the body container
+	    a{
+	  		color:#fff;
+	    }
+	    a.navbar-brand{
+	    	background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/logo_white.png);
+	    }
+
+
+
+
+
+
+	}
+
+	}
+
+
+	/////////////form header - section 1//////////////////////////////
+	.header_form{
+
+
+		.video-background-container{
+			background-attachment: fixed;
+			background-size: cover;
+
+			#video-background {
+			    width: 100%;
+			    height: auto;
+				}
+		}
+
+	}
+
+	.top-form-container {
+		position: absolute;
+		width: 100%;
+		padding-bottom: 56.65%;
+		margin-top:-56.65%;//fixed the small gap between top
+		background: rgba(51, 51, 51, 0.5);
+
+		.sign_form{
+			position: absolute;
+			width: 100%;
+			z-index:7;
+			#top-form-email{
+				width: 100%;
+			    max-width: 450px;
+			    position: relative;
+			    margin-left: auto;
+			    margin-right: auto;
+			    text-align: center;
+			    margin-top: 10%;
+			    color:#fff;
+			    h1,p{
+			    	color:$highlight-color;
+			    }
+			 form{
+				width:250px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:2em;
+				height:30px;
+				position:relative;
+				.step-wrap{
+					width:215px;
+					top:0;
+					input.top-form-input{
+				    	height:36px;
+				    	width:215px;
+				    	color:$text-color;
+						&::placeholder{
+							font-color:$text-color;
+							font-style: italic;
+
+						}
+					}
+				}
+				.step-wrap > div[class*="step"] {
+				    //opacity: 0;
+				    display:none;
+				    transition: all 1s linear;
+			    	&.active{
+				    	//opacity: 1;
+				    	display:inline-block;
+					    pointer-events: all;
+					    transition: all 1s linear;
+			    	}
+				    
+
+				}
+
+			    button{
+			    	width:auto;
+			    	display:inline-block;
+			    	position:absolute;
+			    	height:37px;
+			    	border-top-left-radius: 0;
+    				border-bottom-left-radius: 0;
+    				margin:0;
+    				right:0;
+    				top:0;
+    				&.btn-danger{
+    					background-color:$main-red;
+    				&:hover{
+    					background-color:$highlight-red;
+    					}
+    				}
+			    }
+
+			}
+
+		    #msg{
+		    	margin-top:1em;
+		    	font-style: italic;
+		    	color:$text-color;
+		    	@media only screen and (min-width: $mobile_min) {
+		    		color:#fff;
+		    	}
+		    }
+		    @media only screen and (min-width: $mobile_min) {
+		    	margin-top:20%;
+		    }
+
+
+			}
+		}
+	}
+
+
+	#mountain-parallax{
+		$width:100%;
+		width:$width;
+		position:relative;
+		padding-bottom:($width*0.5665);
+		margin-top: -($width*0.5665);
+		
+		.layer {
+			background-position: bottom center;
+			background-repeat: no-repeat;
+			width: 100%;
+			position: fixed;
+			background-size:cover;
+			padding-bottom:($width*0.5665);
+			z-index:5;
+		}
+		.layer-02 {
+		    background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Asset_1.svg);
+		}
+		.layer-03 {
+			background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Asset_4.svg);
+
+		}
+		.layer-04 {
+			background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Asset_3.svg);
+		}
+		.layer-05 {
+			background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Asset_2.svg);
+
+			}
+
+	}
+
+	.home_bootom_container,.home_bootom_container_2,.home_bootom_container_3{
+
+		background-color:$highlight-color;
+		width: 100%;
+		margin-top: -2px;
+		position: relative;
+		z-index: 10;
+		background-image: url(/wp-content/themes/hm-wordpress-base-theme/img/Schwartz_homepage_bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: left;
+		background-position-y: -300px;
+
+		}
+		.home_bottom_absolute{
+			position: absolute;
+		    height: 90%;
+		    width: 100%;
+		    background: $body-background;
+		}
+
+	/////////////Donation - Section 2///////////////////////////////////////////
+	.donation{
+		width:90%;
+		max-width:800px;
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+		.donation-container{
+			width:100%;
+			max-width:500px;
+			margin-left:auto;
+			margin-right:auto;
+			display:inline-block;
+		}
+	}
+	//////////Accomplished - Section 3///////////////////////////////////////
+	.accomplished{
+		display:inline-block;
+		width: 100%;
+		text-align: center;
+		padding-top:4em;
+		.accomplished-container{
+			width:90%;
+			max-width:600px;
+			margin-right:auto;
+			margin-left:auto;
+			.row{
+				display: inline-block;
+				margin:0;
+				float:left;
+				.col-md-6{
+					padding:2px;
+					.col-md-6-container{
+						background-color:$main-blue;
+						padding:2em 5%;
+							h4{
+								width: fit-content;
+							    margin-left: auto;
+							    margin-right: auto;
+							    padding-bottom: .5em;
+							    border-bottom: 2px solid red;
+							}
+							p,h4{
+								color:$highlight-color;
+							}
+					}
+
+				}
+				@media only screen and (min-width: $tablet_min) {
+					
+					display:flex;
+					.col-md-6{
+						.col-md-6-container{
+							//height:400px;	
+							height:100%				
+						}
+
+
+					}
+
+
+					&:first-child{
+						.col-md-6:first-child{
+							.col-md-6-container{
+								border:1px $main-blue solid;
+								border-top-left-radius:30%;
+							}
+						}
+					}
+					&:last-child{
+						.col-md-6:last-child{
+							.col-md-6-container{
+								border:1px $main-blue solid;
+								border-bottom-right-radius:30%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	////////Social Media - Section 4//////////////////////////////////////
+	.social-slides{
+	    width: 100%;
+	    max-width: 800px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	    text-align: center;
+	    padding-top:4em;
+		.slidercontainer{
+			ul.tab-group{
+				list-style:none;
+				padding-left:0;
+			a{
+				
+				color:$text-color;
+				font-family:FontAwesome;
+				font-size:2em;
+				&:hover,&:active{
+					color:$main-blue;
+					text-decoration:none;
+				}
+					&.facebook-btn{
+						&:after{
+							content:"\f09a";
+
+						}
+					}
+					&.twitter-btn{
+						&:hover{
+							color:$twitter-blue;
+						}
+						&:after{
+							content:"\f099";
+						}
+					}
+
+				}
+				li.tab{
+					display:inline-block;
+					padding-left:1em;
+					&.active{
+						a{
+							text-decoration:none;
+							color:$main-blue;
+						}
+						a.twitter-btn{
+							color:$twitter-blue;
+						}
+
+					}
+				.carousel {
+					margin: 0 auto;
+					width:800px;
+					height: 300px;
+					display: relative;
+				}
+				.carousel img {
+					display: hidden; /* hide images until carousel prepares them */
+					cursor: pointer; /* not needed if you wrap carousel items in links */
+				}
+
+
+
+
+
+				}
+			}
+			.tab-content{
+				.carousel3d{
+					&.carousel3dtwitter{
+						.carousel-3d-slide{
+							.left_social_bar_hidden{
+								background-color:rgba(64, 153, 254, 0.66);
+							}
+							.left_social_bar_shown{
+								background-color:$twitter-blue;
+							}
+
+						} 
+
+					}
+					.carousel-3d-slide{
+						display: flex;
+						flex:1;
+						flex-direction: column;
+						justify-content: center;
+						text-align: center;
+						background-color: $body-background;
+						transition: all .4s;
+						opacity:0.5;
+						&.current{
+							background-color: $body-background;
+							color: $text-color;
+							span{
+								font-size: 20px;
+								font-weight: 500;
+							}
+						}
+						&:first-child{
+							background-image:url("/wp-content/themes/hm-wordpress-base-theme/img/fb_slider_1.png");
+						}
+						&:nth-child(2) {
+							background-image:url("/wp-content/themes/hm-wordpress-base-theme/img/fb_slider_2.png");
+
+						}
+						&:nth-child(3) {
+							background-image:url("/wp-content/themes/hm-wordpress-base-theme/img/fb_slider_3.png");
+						
+						}
+						.left_social_bar_hidden{
+							background-color:rgba(59, 89, 152, 0.66);
+							width:100%;
+							height:70px;
+							position:absolute;
+							right:-42%;
+							top:50%;
+							transform: translateY(-50%) rotate(90deg);
+							cursor:pointer;
+							p{
+								position:absolute;
+								padding:15px;
+								width:100%;
+								left:0;
+								color:#fff;
+							}
+						}
+						.left_social_bar_shown{
+							background-color:$social-background;
+							width:40%;
+							height:100%;
+							position:absolute;
+							right:0;
+							font-size: 18px;
+						    color: #fff;
+						    top:0;
+						    .shown_container{
+						    	transform:translateY(35%);
+						    	height:100%;
+							    h2{
+							    	color:#fff;
+							    	font-size:20px;
+							    	margin-bottom:2em;
+							    }
+							    a.btn-white-share{
+							    	font-size:12px;
+							    	@media (min-width: $mobile-min){
+							    		font-size:16px;
+
+							    	}
+
+							    }
+
+						    }
+
+
+
+						}
+					}
+				.carousel-3d-controls a{
+					color:$text-color;
+					&:hover{
+						opacity:0.8;
+						transform:scale(1.1);
+						transition: all 0.3s linear;
+					}
+				}
+				}
+
+			}
+
+
+		}
+
+		}
+	.social-section{
+		width:100%;
+		max-width:800px;
+		text-align:center;
+		padding-top:4em;
+		padding-bottom:2em;
+		z-index:-1;
+		margin-left:auto;
+		margin-right:auto;
+		.fa{
+			font-size:32px;
+			padding-top:1em;
+			&.fa-facebook{
+				color:$main-blue;
+			}
+			&.fa-twitter{
+				color:$twitter-blue;
+			}
+		}
+		@media only screen and (min-width: $tablet_min) {
+			position:absolute;
+			left:20px;
+			top:0;
+			text-align:left;
+			h1{
+				transform: rotate(270deg);
+			    font-size: 16px;
+			    font-weight: normal;
+			    width: fit-content;
+			    transform-origin: left;
+			    padding-top: 25px;
+			    letter-spacing: 5px;
+			    margin-bottom:0;
+			}
+			a:hover{
+				transform:scale(1.1);
+			}
+			
+		}
+	}
+
+}

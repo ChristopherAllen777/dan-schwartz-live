@@ -1,0 +1,38 @@
+Email	PhoneNumber	FirstName	LastName
+rui@harrismediallc.com
+test@gmail.com	775240998
+testchangedirectory@gmail.com
+testfordirectory2@gmail.com
+rory@harrismediallc.com	2407538120	Rory
+mingyena@gmail.com
+mingyena@gmail.com
+rui@harrismediallc.com
+mingyena@gmail.com
+mingyena@gmail.com
+mingyena@gmail.com
+mingyena@gmail.com
+rui@gmail.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+mingyena@gmail.com
+rui@harrismediallc.com
+sdfsdf	sdfsdf	sdfdsf
+test@tami.com	sdfsdf	sfsdf
+Samantha@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com	rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+rui@harrismediallc.com
+josh@harrismediallc.com	7146732626	Josh
+josh@harrismediallc.com	7146732626	Josh
+rui@harrismediallc.com	7787654345	Rui
+rui@harrismediallc.com	3435434456	Rui
+dfsdf@sdfsdf.com	sdfsdfsdf	sdfsdfs
